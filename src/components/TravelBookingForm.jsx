@@ -11,7 +11,7 @@ const TravelBookingForm = () => {
     const [value, setValue] = useState();
 
     return (
-        <form onSubmit={handleSubmit} className="max-w-md mx-6 my-4 p-2 bg-white rounded-lg shadow">
+       <form onSubmit={handleSubmit} className="max-w-md mx-6 my-4 p-2 bg-white rounded-lg shadow">
             {/* Trip Type */}
             <div className="flex gap-2 mb-6 bg-gray-100 rounded-lg">
                 {['One way', 'Round Trip', 'Hourly'].map((type, i) => (
