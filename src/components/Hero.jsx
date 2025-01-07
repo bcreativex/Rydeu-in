@@ -4,7 +4,7 @@ import bgCity from '../assets/city/bgCity.png'
 // import { Calendar, ChevronDown, Clock, Mail } from 'lucide-react'
 import TravelBookingForm from './TravelBookingForm'
 import MiniBus from './MiniBus'
-import BookAndPay from './BookAndPay'
+// import BookAndPay from './BookAndPay'
 
 export default function Hero() {
   return (
@@ -23,18 +23,30 @@ export default function Hero() {
             <p className="text-3xl text-white">
               Book airport transfers, city transfers and hourly disposal services with driver
             </p>
-          </div>
 
-          <TravelBookingForm />
+            {/* minibus and book and pay testing */}
+
+                  <div className='mt-20 flex gap-4 w-[1520px] h-[180px] '>
+                  <MiniBus />
+                  <MiniBus />
+                  {/* <BookAndPay /> */}
+                  </div>
+          </div>
+          <div className='mb-20'>
+            <TravelBookingForm /> 
+          </div>
         </div>
 
-        
-        <div className='flex gap-4 w-[1520px] h-[180px] mb-9'>
+        {/* <div className='flex gap-4 w-[1520px] h-[180px] mb-9'>
         <MiniBus />
         <BookAndPay />
-        </div>
+        </div> */}
+        
+
       </div>
     </div>
   )
 }
+
+
 
