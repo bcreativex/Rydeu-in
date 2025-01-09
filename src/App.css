@@ -3,6 +3,15 @@
 
 }
 
+.max-w-6_5xl {
+  max-width: 86rem; /* Calculate a width between 80rem (7xl) and 86rem (6xl) */
+}
+
+.grid-container {
+  padding-left: 30px; /* Adjust padding value as needed */
+  padding-right: 30px; /* Adjust padding value as needed */
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;

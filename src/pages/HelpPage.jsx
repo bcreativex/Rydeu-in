@@ -13,6 +13,7 @@ import meta from '../assets/meta.png'
 import insta from '../assets/insta.png'
 import twitter from '../assets/twitter.png'
 import linkedin from '../assets/linkedin.png'
+import Header from '../components/Header'
 
 export default function HelpPage() {
   const [openSection, setOpenSection] = useState('')
@@ -25,7 +26,9 @@ export default function HelpPage() {
     }
   }
 
-  return (
+  return ( 
+    <div>
+    <Header />
     <div className="min-h-screen bg-white pt-20 border-gray-800 relative">
       <img src={wave2} alt="Background" className="absolute inset-0 w-full h-3/2 object-cover" />
 
@@ -193,6 +196,7 @@ export default function HelpPage() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   )
 }

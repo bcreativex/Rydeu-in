@@ -7,7 +7,7 @@ export default function Content() {
   return (
     <div className="py-12 bg-white">
       <div className="container mx-auto px-4">
-        <div className="flex flex-wrap mx-9">
+        <div className="flex flex-wrap mx-15">
           {/* Left Container */}
           <div className="w-full md:w-1/4 px-2">
             <div className="max-w-md mx-auto">

@@ -1,18 +1,14 @@
-import React from 'react'
-import './App.css'
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
-import Header from './components/Header'
-import HomePage from './pages/HomePage'
-import HelpPage from './pages/HelpPage'
-import RequestsPage from './pages/RequestsPage'
+import React from 'react';
+import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import HelpPage from './pages/HelpPage';
+import RequestsPage from './pages/RequestsPage';
 
 function App() {
-  const location = useLocation();
-
   return (
-    <div className="min-h-screen">
-
-      {location.pathname !== '/requests' && <Header />}
+    <div className="max-h-screen">
+      {/* Removed Header */}
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/help" element={<HelpPage />} />
