@@ -1,43 +1,42 @@
-import React from 'react'
+import React from 'react';
+import { InfoIcon } from 'lucide-react';
+import { PropTypes } from 'prop-types';
 
-import { InfoIcon } from 'lucide-react'
-import { PropTypes } from 'prop-types'
-
-export default function PriceBreakdown({ 
-  title = '', 
-  youGet = 0, 
-  commission = 0, 
-  total = 0, 
-  description = '' 
+export default function PriceBreakdown({
+  title = '',
+  youGet = 0,
+  commission = 0,
+  total = 0,
+  description = ''
 }) {
-  const commissionAmount = (youGet * commission / 100).toFixed(0)
+  const commissionAmount = ((youGet * commission) / 100).toFixed(0);
 
   return (
-    <div className="bg-blue-50/50 p-6 rounded-lg">
-      <h3 className="font-medium text-lg mb-6">{title}</h3>
-      <div className="space-y-4">
+    <div className=" p-4 rounded-md max-w-xs mx-auto">
+      <h3 className="font-medium text-base mb-4">{title}</h3>
+      <div className="bg-blue-50/80 space-y-3 p-5 rounded">
         <div className="flex justify-between items-center">
-          <span className="text-gray-700">You Get</span>
-          <span className="font-medium">€ {youGet}</span>
+          <span className="text-gray-700 text-sm">You Get</span>
+          <span className="font-medium text-sm">€ {youGet}</span>
         </div>
-        <div className="flex justify-between items-center text-gray-500">
+        <div className="flex justify-between items-center text-gray-500 text-sm">
           <span>Rydeu Commission {commission}%</span>
           <span>€ {commissionAmount}</span>
         </div>
-        <div className="flex justify-between items-center pt-4 border-t text-lg">
+        <div className="flex justify-between items-center pt-3 border-t text-sm">
           <span className="font-medium">Total Offer Price</span>
           <span className="text-green-500 font-medium">€ {total}</span>
         </div>
       </div>
-      <div className="flex items-center gap-2 mt-4 text-sm text-gray-500 group relative">
-        <InfoIcon className="w-4 h-4" />
+      <div className="flex items-center gap-2 mt-3 text-xs text-gray-500 group relative">
+        <InfoIcon className="w-3 h-3" />
         <p>{description}</p>
-        <div className="absolute bottom-full left-0 mb-2 w-64 bg-gray-800 text-white text-xs rounded p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
+        <div className="absolute bottom-full left-0 mb-1 w-48 bg-gray-800 text-white text-[10px] rounded p-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
           {description}
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 PriceBreakdown.propTypes = {
@@ -46,5 +45,4 @@ PriceBreakdown.propTypes = {
   commission: PropTypes.number,
   total: PropTypes.number,
   description: PropTypes.string
-}
-
+};

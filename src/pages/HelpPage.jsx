@@ -88,7 +88,7 @@ export default function HelpPage() {
                     <h3 className="text-xl font-semibold mb-1 text-black lg:mr-64">
                       Chat
                     </h3>
-                    <p className="text-sm text-gray-500 lg:ml-14">
+                    <p className="text-sm text-gray-400 lg:ml-14">
                       Lorem ipsum dolor sit amet consectetur adipisicing.
                     </p>
                   </div>
@@ -144,7 +144,7 @@ export default function HelpPage() {
                     <h3 className="text-xl font-semibold mb-1 text-black lg:mr-64">
                     &nbsp; Social
                     </h3>
-                    <p className="text-sm text-gray-500 lg:ml-14">
+                    <p className="text-sm text-gray-400 lg:ml-14">
                       Lorem ipsum dolor sit amet consectetur adipisicing.
                     </p>
                   </div>
@@ -204,7 +204,7 @@ export default function HelpPage() {
                     <h3 className="text-xl font-semibold mb-1 text-black lg:mr-64">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Send Query
                     </h3>
-                    <p className="text-sm text-gray-500 lg:ml-14">
+                    <p className="text-sm text-gray-400 lg:ml-14">
                       Lorem ipsum dolor sit amet consectetur adipisicing.
                     </p>
                   </div>
